@@ -1,0 +1,8 @@
+run_erl [20044] Fri Apr 24 17:52:00 2015
+Args before exec of shell:
+run_erl [20044] Fri Apr 24 17:52:00 2015
+argv[0] = sh
+run_erl [20044] Fri Apr 24 17:52:00 2015
+argv[1] = -c
+run_erl [20044] Fri Apr 24 17:52:00 2015
+argv[2] = exec "/Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/bin/hello_phoenix" "console_boot"

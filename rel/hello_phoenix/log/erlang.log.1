@@ -1,0 +1,90 @@
+
+=====
+===== LOGGING STARTED Fri Apr 24 16:54:18 CDT 2015
+=====
+Exec: /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/erts-6.3/bin/erlexec -boot /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/releases/0.0.1/hello_phoenix -boot_var ERTS_LIB_DIR /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/erts-6.3/../lib -env ERL_LIBS /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/lib -config /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/releases/0.0.1/sys.config -pa /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/lib/consolidated -args_file /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/releases/0.0.1/vm.args -user Elixir.IEx.CLI -extra --no-halt +iex -- console
+Root: /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix
+/Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix
+Erlang/OTP 17 [erts-6.3] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]
+
+{"Kernel pid terminated",application_controller,"{application_start_failure,hello_phoenix,{{shutdown,{failed_to_start_child,'Elixir.HelloPhoenix.Endpoint',{'EXIT',{badarg,[{erlang,bit_size,[nil],[]},{'Elixir.Phoenix.Endpoint.Adapter',url,1,[{file,\"lib/phoenix/endpoint/adapter.ex\"},{line,154}]},{'Elixir.Phoenix.Config',cache,3,[{file,\"lib/phoenix/config.ex\"},{line,48}]},{'Elixir.Phoenix.Endpoint.Adapter',start_link,2,[{file,\"lib/phoenix/endpoint/adapter.ex\"},{line,24}]},{supervisor,do_start_child,2,[{file,\"supervisor.erl\"},{line,314}]},{supervisor,start_children,3,[{file,\"supervisor.erl\"},{line,297}]},{supervisor,init_children,2,[{file,\"supervisor.erl\"},{line,263}]},{gen_server,init_it,6,[{file,\"gen_server.erl\"},{line,306}]}]}}}},{'Elixir.HelloPhoenix',start,[normal,[]]}}}"}
+
+Crash dump was written to: erl_crash.dump
+Kernel pid terminated (application_controller) ({application_start_failure,hello_phoenix,{{shutdown,{failed_to_start_child,'Elixir.HelloPhoenix.Endpoint',{'EXIT',{badarg,[{erlang,bit_size,[nil],[]},
+
+=====
+===== LOGGING STARTED Fri Apr 24 17:49:08 CDT 2015
+=====
+Exec: /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/erts-6.3/bin/erlexec -boot /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/releases/0.0.2/hello_phoenix -boot_var ERTS_LIB_DIR /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/erts-6.3/../lib -env ERL_LIBS /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/lib -config /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/releases/0.0.2/sys.config -pa /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/lib/consolidated -args_file /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/releases/0.0.2/vm.args -user Elixir.IEx.CLI -extra --no-halt +iex -- console
+Root: /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix
+/Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix
+Erlang/OTP 17 [erts-6.3] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]
+
+Interactive Elixir (1.0.2) - press Ctrl+C to exit (type h() ENTER for help)
+iex(hello_phoenix@127.0.0.1)1> 
+=====
+===== LOGGING STARTED Fri Apr 24 17:49:47 CDT 2015
+=====
+Exec: /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/erts-6.3/bin/erlexec -boot /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/releases/0.0.2/hello_phoenix -boot_var ERTS_LIB_DIR /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/erts-6.3/../lib -env ERL_LIBS /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/lib -config /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/releases/0.0.2/sys.config -pa /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/lib/consolidated -args_file /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix/releases/0.0.2/vm.args -user Elixir.IEx.CLI -extra --no-halt +iex -- console
+Root: /Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix
+/Users/hectorip/Development/Erlang/Phoenix/hello_phoenix/rel/hello_phoenix
+{error_logger,{{2015,4,24},{17,49,47}},"Protocol: ~tp: the name hello_phoenix@127.0.0.1 seems to be in use by another Erlang node",["inet_tcp"]}
+{error_logger,{{2015,4,24},{17,49,47}},crash_report,[[{initial_call,{net_kernel,init,['Argument__1']}},{pid,<0.20.0>},{registered_name,[]},{error_info,{exit,{error,badarg},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,322}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}},{ancestors,[net_sup,kernel_sup,<0.10.0>]},{messages,[]},{links,[#Port<0.132>,<0.17.0>]},{dictionary,[{longnames,true}]},{trap_exit,true},{status,running},{heap_size,987},{stack_size,27},{reductions,821}],[]]}
+{error_logger,{{2015,4,24},{17,49,47}},supervisor_report,[{supervisor,{local,net_sup}},{errorContext,start_error},{reason,{'EXIT',nodistribution}},{offender,[{pid,undefined},{name,net_kernel},{mfargs,{net_kernel,start_link,[['hello_phoenix@127.0.0.1',longnames]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]}]}
+{error_logger,{{2015,4,24},{17,49,47}},supervisor_report,[{supervisor,{local,kernel_sup}},{errorContext,start_error},{reason,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}},{offender,[{pid,undefined},{name,net_sup},{mfargs,{erl_distribution,start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]}]}
+{error_logger,{{2015,4,24},{17,49,47}},crash_report,[[{initial_call,{application_master,init,['Argument__1','Argument__2','Argument__3','Argument__4']}},{pid,<0.9.0>},{registered_name,[]},{error_info,{exit,{{shutdown,{failed_to_start_child,net_sup,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}}},{kernel,start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,133}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}},{ancestors,[<0.8.0>]},{messages,[{'EXIT',<0.10.0>,normal}]},{links,[<0.8.0>,<0.7.0>]},{dictionary,[]},{trap_exit,true},{status,running},{heap_size,376},{stack_size,27},{reductions,117}],[]]}
+{error_logger,{{2015,4,24},{17,49,47}},std_info,[{application,kernel},{exited,{{shutdown,{failed_to_start_child,net_sup,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}}},{kernel,start,[normal,[]]}}},{type,permanent}]}
+{"Kernel pid terminated",application_controller,"{application_start_failure,kernel,{{shutdown,{failed_to_start_child,net_sup,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}}},{kernel,start,[normal,[]]}}}"}
+
+Crash dump was written to: erl_crash.dump
+Kernel pid terminated (application_controller) ({application_start_failure,kernel,{{shutdown,{failed_to_start_child,net_sup,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}}},{k
+
+=====
+===== LOGGING STARTED Fri Apr 24 17:52:00 CDT 2015
+=====
+
+===== ALIVE Fri Apr 24 18:04:09 CDT 2015
+
+===== ALIVE Fri Apr 24 18:19:09 CDT 2015
+
+===== ALIVE Sat Apr 25 08:41:33 CDT 2015
+
+===== ALIVE Sat Apr 25 10:11:25 CDT 2015
+
+===== ALIVE Sat Apr 25 10:26:25 CDT 2015
+
+===== ALIVE Sat Apr 25 10:58:38 CDT 2015
+
+===== ALIVE Sat Apr 25 11:13:38 CDT 2015
+
+===== ALIVE Sat Apr 25 11:28:38 CDT 2015
+
+===== ALIVE Sat Apr 25 11:43:38 CDT 2015
+
+===== ALIVE Sat Apr 25 11:58:38 CDT 2015
+
+===== ALIVE Sat Apr 25 12:13:38 CDT 2015
+
+===== ALIVE Sat Apr 25 12:31:20 CDT 2015
+
+===== ALIVE Sat Apr 25 12:46:20 CDT 2015
+
+===== ALIVE Sat Apr 25 13:01:20 CDT 2015
+
+===== ALIVE Sat Apr 25 13:16:20 CDT 2015
+
+===== ALIVE Sat Apr 25 13:31:20 CDT 2015
+
+===== ALIVE Sat Apr 25 13:46:20 CDT 2015
+
+===== ALIVE Sat Apr 25 14:01:20 CDT 2015
+
+===== ALIVE Sat Apr 25 14:16:20 CDT 2015
+
+===== ALIVE Sat Apr 25 14:31:20 CDT 2015
+
+===== ALIVE Sat Apr 25 22:53:51 CDT 2015
+
+===== ALIVE Sat Apr 25 23:08:45 CDT 2015
+
+===== ALIVE Sat Apr 25 23:23:45 CDT 2015
