@@ -17,6 +17,7 @@ defmodule HelloPhoenix.Router do
 
     get "/", PageController, :index
     get "/hello_phoenix", PageController, :hello
+    get "/about", InfoController, :about
   end
 
   # Other scopes may use custom stacks.
